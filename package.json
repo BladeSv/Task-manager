@@ -1,21 +1,24 @@
 {
-  "name": "task-manager",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "scripts": {
-    "clean": "rm dist/bundle.js",
-    "start": "parcel src/index.html",
-    "build-prod": "parcel build src/index.html"
-  },
-  "dependencies": {},
-  "devDependencies": {
-    "parcel-bundler": "^1.12.4",
-    "@babel/core": "^7.9.0",
-    "@babel/preset-env": "^7.9.0",
-    "eslint": "^6.8.0"
-  }
+    "name": "task-manager",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "homepage": "http://BladeSv.github.io/Task-manager",
+    "scripts": {
+        "clean": "rm dist/bundle.js",
+        "start": "parcel src/index.html",
+        "build-prod": "parcel build src/index.html",
+        "predeploy": "npm run build-prod",
+        "deploy": "gh-pages -d build"
+    },
+    "dependencies": {},
+    "devDependencies": {
+        "parcel-bundler": "^1.12.4",
+        "@babel/core": "^7.9.0",
+        "@babel/preset-env": "^7.9.0",
+        "eslint": "^6.8.0"
+    }
 }
