@@ -1,0 +1,150 @@
+h1 {
+    color: grey;
+}
+
+main {
+    display: flex;
+}
+
+.component {
+    color: green;
+    padding: 10px;
+    flex: 1;
+}
+
+.taskbox {
+    width: 500px;
+    margin: auto;
+}
+
+.panel {
+    display: flex;
+    justify-content: space-between;
+}
+
+.panel-button {
+    background-color: rgb(221, 216, 216);
+    border: none;
+    color: grey;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 200px;
+    border: 1px solid black;
+}
+
+.task-button {
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    margin: 5px;
+    display: block;
+}
+
+.task-button[data-button-action="edit"] {
+    background-color: white;
+}
+
+.task-button[data-button-action="delete"] {
+    background-color: black;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    margin: 10px auto;
+    border: 1px solid black;
+}
+
+.task>input[type="text"] {
+    margin-left: 20px;
+    margin-right: 70px;
+}
+
+.task>input[type="checkbox"] {
+    margin: 10px;
+}
+
+.task>input[type="checkbox"]:checked+input[type="text"] {
+    text-decoration: line-through;
+}
+
+.cancel-button-box {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.message-button {
+    background-color: white;
+    /* Green */
+    color: grey;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 100px;
+    border: 1px solid black;
+    margin-left: 10px;
+}
+
+.message-box-main {
+    margin: auto 20px;
+}
+
+.message-box-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.message-box-text input[type="text"] {
+    margin: auto;
+    width: 80%;
+    padding: 5px;
+}
+
+.message-box-text p {
+    margin: auto;
+    padding: 10px;
+}
+
+.message-box-buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px auto;
+}
+
+.modal.open .modal-overlay,
+.modal.open .message-box {
+    opacity: 1;
+    z-index: 9999;
+}
+
+.message-box,
+.modal-overlay {
+    opacity: 0;
+    z-index: -1;
+}
+
+.message-box {
+    border: 1px solid black;
+    width: 400px;
+    margin: auto;
+    display: flex;
+    flex-flow: column;
+    background: white;
+    margin: 100px auto;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgb(0, 0, 0, 0.5);
+}
+
+/*# sourceMappingURL=/styles.8986bff4.css.map */
