@@ -12,7 +12,7 @@
         "start": "parcel src/index.html",
         "build-prod": "parcel build src/index.html --public-url /Task-manager/ --no-content-hash",
         "predeploy": "npm run build-prod",
-        "deploy": "gh-pages -d build"
+        "deploy": "gh-pages -d dist"
     },
     "dependencies": {},
     "devDependencies": {
